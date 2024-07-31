@@ -871,7 +871,7 @@
         const labels = document.querySelectorAll(".scale__label");
         if (labels) labels.forEach((label => {
             label.addEventListener("click", (function() {
-                if (label.closest("._disabled")) {
+                if (!label.closest("._disabled")) {
                     const dataValue = this.getAttribute("data-value");
                     const currentPainLevel = document.querySelector(".pain-level:not([data-value])");
                     if (currentPainLevel) {
@@ -891,6 +891,5 @@
             }));
         }));
     }
-    window["FLS"] = true;
     isWebp();
 })();
