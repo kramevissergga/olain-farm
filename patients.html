@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>Patients</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240731190411">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="new-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__body new-popup">
+					<button data-close type="button" class="popup__close _icon-cross"></button>
+					<h3 class="new-popup__title">Добавьте пациента</h3>
+					<div class="new-popup__text text">
+						<p>
+							Введите данные пациента ниже и нажмите на кнопку "Создать пациента".
+							После того, как создадите пациента заполните, пожалуйста, анкету №1.
+						</p>
+					</div>
+					<form action="#" class="new-popup__form">
+						<div class="new-popup__input input input--icon _icon-user-add">
+							<input type="text" placeholder="Введите данные пациента">
+						</div>
+						<button class="new-popup__button button button--black">Создать пациента</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="remove-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__body remove-popup">
+					<h3 class="remove-popup__title">Удалить пациента</h3>
+					<div class="remove-popup__text text">
+						<p>
+							Вы точно хотите удалить Пациента 01?
+						</p>
+					</div>
+					<div class="remove-popup__actions">
+						<button data-close class="remove-popup__button button button--border">Отмена</button>
+						<button class="remove-popup__button button button--red">Удалить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="breadcrumbs breadcrumbs--margin">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Исследования</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link"> Нейромидин в комплексном лечении обострения хронических болей в
+								спине</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Анкетирование</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page__patients patients">
+				<div class="patients__container">
+					<div class="patients__inactive inactive">Исследование неактивно</div>
+					<h1 class="patients__title title">Анкетирование</h1>
+					<div class="patients__add add-patient">
+						<div class="add-patient__title">Добавьте пациента</div>
+						<button data-popup="#new-popup" class="add-patient__button button button--black">Создать пациента</button>
+					</div>
+					<div class="patients__items">
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button  button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button item-patient__button--new button button--text-icon button--red _icon-file-add">Анкета
+									№2</a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button item-patient__button--new button button--text-icon button--red _icon-file-add">Анкета
+									№2</a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button item-patient__button--new button button--text-icon button--red _icon-file-add">Анкета
+									№2</a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button item-patient__button--new button button--text-icon button--red _icon-file-add">Анкета
+									№2</a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-edit">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+						<div class="patients__item item-patient">
+							<button data-popup="#remove-popup" class="item-patient__remove _icon-cross"></button>
+							<div class="item-patient__body">
+								<div class="item-patient__image">
+									<img src="img/patients/user.svg" alt="Image" class="ibg">
+								</div>
+								<div class="item-patient__label">
+									Пациент 12
+								</div>
+								<div class="item-patient__title">Виталий Забожный</div>
+							</div>
+							<div class="item-patient__actions">
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №1</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+								<a href="#" class="item-patient__button button button--text-icon _icon-eye">Анкета №2</a>
+								<a href="#" class="item-patient__button button button--icon button--border _icon-download"></a>
+							</div>
+						</div>
+					</div>
+					<ul class="patients__pagination pagination">
+						<li class="active">1</li>
+						<li>2</li>
+						<li class="_icon-ch-right"></li>
+						<li class="_icon-ch-double-right"></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240731190411"></script>
+</body>
+
+</html>
