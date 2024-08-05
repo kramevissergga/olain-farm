@@ -855,7 +855,7 @@ body::after {
 .tags-research__title {
   color: #000;
   font-family: Inter,sans-serif;
-  font-size: .875rem;
+  font-size: .855rem;
   font-weight: 400;
   letter-spacing: -.5px
 }
@@ -1230,9 +1230,6 @@ body::after {
 }
 .questionary__header:not(:last-child) {
   margin-bottom: 2.5rem
-}
-.questionary__title {
-  font-weight: 600
 }
 .questionary__title:not(:last-child) {
   margin-bottom: 1.125rem
@@ -1738,7 +1735,8 @@ body::after {
     margin-bottom: .625rem
   }
   .title {
-    letter-spacing: -.075rem
+    letter-spacing: -.075rem;
+    font-weight: 600
   }
   .research__title:not(:last-child) {
     margin-bottom: 2.5rem
