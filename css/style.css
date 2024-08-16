@@ -829,6 +829,18 @@ body::after {
 [data-subitem]::before {
   content: attr(data-subitem)
 }
+.label-mobile {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: .754375rem;
+  padding: .3125rem 2.6875rem;
+  line-height: 1.86;
+  background-color: #00938b
+}
+.label-mobile--margin:not(:last-child) {
+  margin-bottom: 2.5rem
+}
 .page__research {
   margin-bottom: 5rem
 }
@@ -1598,6 +1610,9 @@ body::after {
   }
 }
 @media (min-width:47.99875em) {
+  .label-mobile {
+    display: none
+  }
   .research__body {
     display: flex;
     align-items: start
